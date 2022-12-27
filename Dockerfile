@@ -17,4 +17,4 @@ RUN groupadd -r app && useradd -r -g app app
 
 
 EXPOSE 8080
-CMD gunicorn -b :8080 main.py
+CMD [ "python" , "./main.py" ]
